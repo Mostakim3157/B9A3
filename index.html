@@ -11,14 +11,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-        <script src="https://kit.fontawesome.com/b701714a2a.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b701714a2a.js" crossorigin="anonymous"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        primary: '#F8F8F8',
+                        bgprimary: '#F8F8F8',
+                        primary: '#717174',
+                        secondary: '#FF4240',
                     }
                 }
             }
@@ -33,27 +35,69 @@
 </head>
 
 <body class="font-manrope">
-    <header class="max-w-screen-xl mx-auto">
+    <header class="max-w-[1170px] mx-auto">
 
     </header>
 
 
-    <main class="max-w-screen-xl mx-auto">
+    <main class="max-w-[1170px] mx-auto">
+        
+        <!-- program section -->
+        <section>
+            <hr class="border-dashed max-w-[1170px] mx-auto my-8">
+
+            <div class="text-center">
+                <h3 class="text-4xl font-extrabold pb-6">Program Sections</h3>
+                <p class="font-medium leading-6 text-primary w-2/3 mx-auto">This section focuses on introducing and developing young players in the fundamentals of hockey. It may include age-specific teams, coaching clinics, and skill development programs.</p>
+            </div>
+
+            <hr class="border-dashed max-w-[1170px] mx-auto my-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-6 gap-5 mx-5">
+
+                <div
+                    class="bg-[linear-gradient(45deg,rgba(0,0,0,.6),rgba(0,0,0,.2)),url(images/2.png)] bg-no-repeat object-cover h-[340px] text-white col-span-1 rounded-lg">
+                    <h3 class="text-3xl font-extrabold px-10 pt-20 lg:pt-28">Junior Program</h3>
+                    <p class="text-base leading-6 font-medium px-10 py-5">These programs serve as a bridge between youth
+                        or amateur hockey and professional or higher-level competitive leagues. </p>
+                    <button class="bg-secondary btn border-0 text-white text-xl py-3 px-4 mx-10">Register Now!</button>
+                </div>
+
+                <div
+                    class="bg-[linear-gradient(45deg,rgba(0,0,0,.6),rgba(0,0,0,.2)),url(images/3.png)] bg-no-repeat h-[340px] text-white col-span-1 rounded-lg">
+                    <h3 class="text-3xl font-extrabold px-10 pt-20 lg:pt-28">Teenager Program</h3>
+                    <p class="leading-6 font-medium px-10 py-5">These programs are structured to provide young hockey
+                        players, typically in their mid to late teens, with opportunities for skill.</p>
+                    <button class="bg-secondary btn border-0 text-white text-xl py-3 px-4 mx-10">Register Now!</button>
+                </div>
+
+                <div
+                    class="bg-[linear-gradient(45deg,rgba(0,0,0,.6),rgba(0,0,0,.2)),url(images/4.png)] bg-no-repeat h-[340px] lg:h-[450px] text-white col-span-1 lg:col-span-2 rounded-lg">
+                    <h3 class="text-3xl font-extrabold px-10 pt-8 lg:pt-52">Professional Program</h3>
+                    <p class="leading-6 font-medium px-10 lg:pl-10 lg:pr-[610px] py-5">Professional hockey leagues or
+                        teams and aim to cultivate talent, provide opportunities for advancement, and ensure the overall
+                        success of players at the highest competitive levels. </p>
+                    <button class="bg-secondary btn border-0 text-white text-xl py-3 px-4 mx-10">Register Now!</button>
+                </div>
+
+            </div>
+        </section>
 
 
         <!-- social media -->
-        <div class=" bg-primary rounded-xl my-20">
-            <h3 class="text-2xl font-extrabold text-center pt-7 pb-4">Social Media</h3>
+        <section>
+            <div class=" bg-bgprimary rounded-xl m-5 lg:m-0">
 
-            <div class="text-center text-2xl pb-7 space-x-6">
-                <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-instagram"></i>
+                <h3 class="text-2xl font-extrabold text-center pt-7 pb-4">Social Media</h3>
+
+                <div class="text-center text-2xl pb-7 space-x-6">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+
             </div>
-
-        </div>
-        <hr class="border-dashed">
+        </section>
 
     </main>
 
